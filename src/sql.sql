@@ -101,10 +101,10 @@ WHERE users.oras = 'constanta' AND users.blocat = TRUE AND users.varsta > 20;
 
 SELECT username
 FROM users
-JOIN post
-ON users.user_id = post.id
+  JOIN post
+    ON users.user_id = post.id
 GROUP BY username
-ORDER BY count(*) DESC
+ORDER BY count(mesaj) DESC
 LIMIT 1;
 
 --afisare postari ale userilor al caror nume incepe cu i si data postarii itnre 1 martie 2016 si 31 martie 2016

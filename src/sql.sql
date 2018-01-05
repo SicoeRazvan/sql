@@ -17,9 +17,9 @@ ALTER TABLE users
 OWNER TO fasttrackit_dev;
 
 
--- Table: post
+-- Table: postare
 
-CREATE TABLE post
+CREATE TABLE postare
 (
   id integer NOT NULL,
   mesaj character(50),
